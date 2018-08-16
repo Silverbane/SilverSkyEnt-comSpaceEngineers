@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlanetGeneratorDefinitions>
+    <PlanetGeneratorDefinition>
+      <Id>
+        <TypeId>PlanetGeneratorDefinition</TypeId>
+        <SubtypeId>BlackHole</SubtypeId>
+      </Id>
+	  
+      <PlanetMaps Material="false" Ores="false" Biome="false" Occlusion="false"/>
+
+    
+    <MusicCategories>
+      <MusicCategory Category="Danger" Frequency="0.075" />
+    </MusicCategories>
+
+      <SurfaceGravity>99999999999999999999</SurfaceGravity>
+	  <GravityFalloffPower>28</GravityFalloffPower>
+      <DefaultSurfaceMaterial Material="BlackHole" MaxDepth="4"/>
+      <DefaultSubSurfaceMaterial Material="BlackHole"/>
+      <MaterialsMaxDepth Min="4000" Max="4000"/>
+      <MaterialsMinDepth Min="0" Max="20"/>
+
+	  <HillParams Min = "-0.01" Max ="0.01"/>
+
+   
+	<HasAtmosphere>true</HasAtmosphere>
+	<Atmosphere>
+      <Breathable>false</Breathable>
+      <Density>1.0</Density>
+      <LimitAltitude>4.0</LimitAltitude>
+    </Atmosphere>
+	
+    <AtmosphereSettings>
+      <RayleighScattering>
+        <X>1</X>
+        <Y>1</Y>
+        <Z>1</Z>
+      </RayleighScattering>
+      <MieScattering>147.671082</MieScattering>
+      <MieColorScattering>
+        <X>22.684</X>
+        <Y>51.284</Y>
+        <Z>73.528</Z>
+      </MieColorScattering>
+      <RayleighHeight>50.000</RayleighHeight>
+	  <RayleighHeightSpace>25.000</RayleighHeightSpace>
+	  <RayleighTransitionModifier>0.1</RayleighTransitionModifier>
+      <MieHeight>200.000</MieHeight>
+      <MieG>1</MieG>
+      <Intensity>2.495</Intensity>
+      <FogIntensity>0</FogIntensity>
+      <SeaLevelModifier>0.9</SeaLevelModifier>
+      <AtmosphereTopModifier>1.100</AtmosphereTopModifier>
+    </AtmosphereSettings>
+
+	</PlanetGeneratorDefinition>
+	
+  </PlanetGeneratorDefinitions>
+</Definitions>
