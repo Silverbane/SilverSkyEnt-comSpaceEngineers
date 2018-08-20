@@ -112,7 +112,7 @@ namespace AtmosphericDamage
             {
                 foreach (var planet in _planets)
                 {
-                    var sphere = new BoundingSphereD(planet.PositionComp.GetPosition(), 54000);
+                    var sphere = new BoundingSphereD(planet.PositionComp.GetPosition(), 45000);
 
                     var topEntities = MyAPIGateway.Entities.GetTopMostEntitiesInSphere(ref sphere);
                     foreach (var entity in topEntities)
